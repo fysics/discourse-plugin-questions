@@ -1,6 +1,7 @@
 
 QUESTION_ARCHETYPE_NAME = "question"
 
+=begin
 module QuestionsLikeResorter
     def self.included(klass)
         klass.after_save :resort_for_likes
@@ -21,6 +22,7 @@ module QuestionsLikeResorter
 end
 
 PostAction.send :include, QuestionsLikeResorter
+=end
 
 
 ## Create and Register new Archetype
